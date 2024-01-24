@@ -1,0 +1,532 @@
+body {
+  background: #141c24;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+/* HEADER*/
+.header {
+  background: #141c24;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  color: #57d6ff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 15px;
+}
+
+.nav {
+  font-size: 16px;
+}
+.nav_link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 30px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 16px;
+  font-family: Roboto;
+}
+.nav_link:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #57d6ff;
+
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+/* iNTRO*/
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro_inner {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 15px;
+  border: 0.5px solid #57d6ff;
+  background: url("../assets/background.jfif") center no-repeat,
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+  box-shadow: -33px 17px 29px 0px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+}
+
+.intro_title {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 90px 0;
+}
+.intro_suptitle {
+  color: #fff;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.intro_button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 15px;
+  width: 250px;
+
+  color: black;
+  text-decoration: none;
+  background-color: white;
+
+  color: #000;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: background-color 0.1s linear, color 0.1s linear, width 0.2s linear;
+
+  position: relative;
+}
+
+.intro_button:hover {
+  background-color: black;
+  color: white;
+  width: 300px;
+}
+
+.intro_line {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 132px;
+  background: #fff;
+
+  bottom: 50px;
+}
+
+.section {
+  padding-top: 110px;
+}
+
+.section_inner {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.section_content {
+  height: 517px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  white-space: wrap;
+
+  gap: 60px;
+}
+
+.section_suptitle,
+.tutorial_suptitle,
+.subscriptions_suptitle,
+.devices_suptitle {
+  width: 210px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.devices_suptitle {
+  width: 270px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section_suptitle_line,
+.tutorial_suptitle_line,
+.subscriptions_suptitle_line,
+.devices_suptitle_line {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background: #57d6ff;
+}
+
+.section_suptitle_text,
+.tutorial_suptitle_text,
+.subscriptions_suptitle_text,
+.devices_suptitle_text {
+  color: #57d6ff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 180%; /* 28.8px */
+}
+
+.section_title,
+.tutorial_title,
+.subscriptions_title_text,
+.devices_title_text {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section_text {
+  color: #ababab;
+  font-family: Roboto;
+  font-size: 21.33px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 31.995px;
+  text-align: start;
+}
+.section_button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 15px;
+  width: 80px;
+  height: 25px;
+  flex-shrink: 0;
+
+  text-decoration: none;
+
+  color: #57d6ff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+
+.section_button::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #57d6ff;
+
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+  z-index: 3;
+}
+
+.section_button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 3px 2px rgba(87, 214, 255, 1);
+}
+
+.tutorial_content {
+  margin: 0 auto;
+  height: 500px;
+  width: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 90px;
+}
+
+.tutorial_titles,
+.subscriptions_title,
+.devices_title {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tutorial_items {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.tutorial_line {
+  content: "";
+  width: 75px;
+  height: 1px;
+  background: #57d6ff;
+}
+.tutorial_item {
+  height: 110px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.tutorial_item_img {
+  width: 65px;
+  height: 65px;
+}
+
+.tutorial_text {
+  color: #f1f1f1;
+
+  /* H5 */
+  font-family: Roboto;
+  font-size: 21.33px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 31.995px;
+}
+.tutorial_button {
+  width: 70px;
+  height: 22px;
+
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 15px;
+
+  text-decoration: none;
+  text-align: center;
+
+  color: #57d6ff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+.tutorial_button::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #57d6ff;
+
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+  z-index: 3;
+}
+
+.tutorial_button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 3px 2px rgba(87, 214, 255, 1);
+}
+
+.subscriptions {
+  padding-top: 150px;
+}
+
+.subscriptions_content {
+  margin: 0 auto;
+  height: 770px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.subscriptions_items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.subscriptions_item1 {
+  width: 400px;
+  height: 543px;
+  border-radius: 5px;
+  background: #1f2631;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding-left: 48px;
+}
+.suscriptions_item_title {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.subscriptions_item_subtitle {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+
+.subscriptions_item_text {
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #ababab;
+}
+.subscriptions_item_button {
+  display: flex;
+  width: 321px;
+  height: 70px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #00c5ff;
+  justify-content: center;
+  align-items: center;
+
+  color: #000;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  cursor: pointer;
+}
+.devices {
+  padding-top: 190px;
+}
+.devices_content {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.devices_texts_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  position: relative;
+}
+
+.devices_texts {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.devices_imgs {
+  position: absolute;
+  left: 570px;
+  top: -100px;
+}
+
+.device_text {
+  color: #ababab;
+  width: 480px;
+  /* H5 */
+  font-family: Roboto;
+  font-size: 21.33px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 31.995px */
+}
+
+.devices_button {
+  width: 153px;
+
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 15px;
+
+  text-decoration: none;
+  text-align: center;
+
+  color: #00c5ff;
+
+  /* H3 */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.devices_button_items {
+  display: flex;
+  flex-direction: column;
+}
+
+.devices_button_underline {
+  content: "";
+  width: 183px;
+  height: 1px;
+  background: #57d6ff;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo p {
+    display: none;
+  }
+}
